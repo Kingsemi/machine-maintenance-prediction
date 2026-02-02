@@ -27,6 +27,7 @@ if st.button("Predict Machine Condition"):
     prediction = model.predict(input_scaled)
 
     if prediction[0] == 1:
-        st.error("⚠️ Machine Failure Detected")
+        st.error("⚠️⚠️ Machine Condition: FAILURE RISK")
     else:
         st.success("✅ Machine is Operating Normally")
+
